@@ -32,6 +32,7 @@ class Parquimetro {
         } else {
             document.getElementById('tela').textContent = 'Insira um valor em R$:'
             tela.style.color = "#970000ff"
+            return
         }
 
         document.getElementById('tela').textContent = `Você recarregou R$:${valorPago.toFixed(2)}\nTempo restante ${tempo}min\nTroco:${troco.toFixed(2)}`
